@@ -138,5 +138,4 @@ Aliciza/
 ## 致谢
 
 感谢所有参与 AlicizaX 的开发者和反馈者。
-
 [![Contributors](https://contrib.rocks/image?repo=AlicizaX/AlicizaXTemplate)](https://github.com/AlicizaX/AlicizaXTemplate/graphs/contributors)

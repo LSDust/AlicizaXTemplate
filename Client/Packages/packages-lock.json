@@ -13,7 +13,7 @@
       "dependencies": {}
     },
     "com.alicizax.unity.cysharp.zstring": {
-      "version": "http://101.34.252.46:3000/AlicizaX/com.alicizax.unity.cysharp.zstring.git",
+      "version": "https://github.com/AlicizaX/com.alicizax.unity.cysharp.zstring.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},

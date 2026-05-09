@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.alicizax.unity.cysharp.zstring": "http://101.34.252.46:3000/AlicizaX/com.alicizax.unity.cysharp.zstring.git",
+    "com.alicizax.unity.cysharp.zstring": "https://github.com/AlicizaX/com.alicizax.unity.cysharp.zstring.git",
     "com.code-philosophy.hybridclr": "https://gitee.com/focus-creative-games/hybridclr_unity.git",
     "com.code-philosophy.luban": "https://github.com/AlicizaX/luban_unity.git",
     "com.kyrylokuzyk.primetween": "1.3.8",
