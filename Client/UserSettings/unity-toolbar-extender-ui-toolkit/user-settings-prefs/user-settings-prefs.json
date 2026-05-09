@@ -1,0 +1,8 @@
+{
+    "main-toolbar-custom-container:last-scroller-position:ToolbarAutomaticExtenderLeftContainer": 0,
+    "main-toolbar-custom-container:last-scroller-position:ToolbarAutomaticExtenderRightContainer": 0,
+    "organizational-foldable-container:foldout-state:UnityNativeElementsContainer": true,
+    "organizational-foldable-container:foldout-state:GroupElementsContainer": true,
+    "organizational-foldable-container:foldout-state:SingleElementsContainer": true,
+    "main-toolbar-element-controller:foldout-state:ButtonSubgroup": true
+}

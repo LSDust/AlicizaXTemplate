@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27a37e930ca3454fb57bc895f50d2106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoCopyAssembly: 1
+  hotUpdatePath: Assets/Test/
+  hotUpdateAssemblyDefinitions:
+  - {fileID: 5897886265953266890, guid: 564df1cc38305e340a693812656f6fe7, type: 3}
+  - {fileID: 5897886265953266890, guid: 13af28e8268268844a63508765a9e524, type: 3}
+  - {fileID: 5897886265953266890, guid: 5c89d8180b6e1a145b027f32840f0a58, type: 3}
+  - {fileID: 5897886265953266890, guid: a7619eac3f12ad342939451d4b294312, type: 3}
+  linkAssemblyDefinitions:
+  - {fileID: 5897886265953266890, guid: 564df1cc38305e340a693812656f6fe7, type: 3}
+  - {fileID: 5897886265953266890, guid: 13af28e8268268844a63508765a9e524, type: 3}
+  - {fileID: 5897886265953266890, guid: 5c89d8180b6e1a145b027f32840f0a58, type: 3}
+  - {fileID: 5897886265953266890, guid: a7619eac3f12ad342939451d4b294312, type: 3}
+  includeAssembly:
+  - Assembly-CSharp
+  - Fantasy.Unity

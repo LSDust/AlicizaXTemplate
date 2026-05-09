@@ -1,0 +1,1 @@
+{"TargetPlatform":5,"BuildPipeline":2,"Compression":2,"EnableSharePack":true,"VersionFormat":"yyyy-MM-dd-HHmm","OutputPath":"Builds/AssetBundles","CopyToCDN":false,"CDNPath":"CDN/Latest","BuildPlayer":false,"ExecutablePath":"Builds/Game.exe"}

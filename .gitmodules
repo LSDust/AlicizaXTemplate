@@ -1,0 +1,21 @@
+[submodule "Client/Packages/com.alicizax.unity.animationflow"]
+	path = Client/Packages/com.alicizax.unity.animationflow
+	url = https://github.com/AlicizaX/com.alicizax.unity.animationflow.git
+[submodule "Client/Packages/com.alicizax.unity.cysharp.unitask"]
+	path = Client/Packages/com.alicizax.unity.cysharp.unitask
+	url = https://github.com/AlicizaX/com.alicizax.unity.cysharp.unitask.git
+[submodule "Client/Packages/com.alicizax.unity.ui.extension"]
+	path = Client/Packages/com.alicizax.unity.ui.extension
+	url = https://github.com/AlicizaX/com.alicizax.unity.ui.extension.git
+[submodule "Client/Packages/com.alicizax.unity.framework"]
+	path = Client/Packages/com.alicizax.unity.framework
+	url = https://github.com/AlicizaX/com.alicizax.unity.framework.git
+[submodule "Client/Packages/com.alicizax.unity.packagemanager"]
+	path = Client/Packages/com.alicizax.unity.packagemanager
+	url = https://github.com/AlicizaX/com.alicizax.unity.packagemanager.git
+[submodule "Client/Packages/com.alicizax.unity.editor.extension"]
+	path = Client/Packages/com.alicizax.unity.editor.extension
+	url = https://github.com/AlicizaX/com.alicizax.unity.editor.extension.git
+[submodule "Client/Packages/com.alicizax.unity.tuyoogame.yooasset"]
+	path = Client/Packages/com.alicizax.unity.tuyoogame.yooasset
+	url = https://github.com/AlicizaX/com.alicizax.unity.tuyoogame.yooasset.git

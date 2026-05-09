@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b212f141eb1bc7b4d97c4dc8b938bc5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIGenerateCommonData:
+    ComCheckSplitName: '#'
+    ComCheckEndName: '@'
+    ArrayComSplitName: '*'
+    GeneratePrefix: ui
+    ExcludeKeywords:
+    - ViewHolder
+  UIElementRegexConfigs:
+  - uiElementRegex: Rect
+    componentType: UnityEngine.RectTransform
+  - uiElementRegex: Obj
+    componentType: GameObject
+  - uiElementRegex: Tf
+    componentType: UnityEngine.Transform
+  - uiElementRegex: Btn
+    componentType: UnityEngine.UI.UXButton
+  - uiElementRegex: Slider
+    componentType: UnityEngine.UI.Slider
+  - uiElementRegex: Img
+    componentType: UnityEngine.UI.Image
+  - uiElementRegex: RImg
+    componentType: UnityEngine.UI.RawImage
+  - uiElementRegex: Scrollbar
+    componentType: UnityEngine.UI.Scrollbar
+  - uiElementRegex: ScrollRect
+    componentType: UnityEngine.UI.ScrollRect
+  - uiElementRegex: GLayout
+    componentType: UnityEngine.UI.GridLayoutGroup
+  - uiElementRegex: HLayout
+    componentType: UnityEngine.UI.HorizontalLayoutGroup
+  - uiElementRegex: VLayout
+    componentType: UnityEngine.UI.VerticalLayoutGroup
+  - uiElementRegex: Text
+    componentType: TMPro.TextMeshProUGUI
+  - uiElementRegex: TogGroup
+    componentType: UnityEngine.UI.UXGroup
+  - uiElementRegex: Mask2D
+    componentType: UnityEngine.UI.RectMask2D
+  - uiElementRegex: Video
+    componentType: UnityEngine.Video.VideoPlayer
+  - uiElementRegex: Input
+    componentType: TMPro.TMP_InputField
+  - uiElementRegex: CanvasGroup
+    componentType: UnityEngine.CanvasGroup
+  - uiElementRegex: ScrollView
+    componentType: AlicizaX.UI.RecyclerView
+  - uiElementRegex: Drag
+    componentType: UnityEngine.UI.UXDraggable
+  - uiElementRegex: Img
+    componentType: UnityEngine.UI.Image
+  UIScriptGenerateConfigs:
+  - ProjectName: MainProject
+    NameSpace: Game.UI
+    GenerateHolderCodePath: Assets/Scripts/Startup/UI/Generate
+    UIPrefabRootPath: Assets/Resources/
+    LoadType: 0
+  - ProjectName: Hotfix
+    NameSpace: Game.UI
+    GenerateHolderCodePath: Assets/Scripts/Hotfix/GameLogic/UI//Generate
+    UIPrefabRootPath: Assets/Bundles/UI
+    LoadType: 1
+  UIIdentifierFormatterTypeName: 
+  UIResourcePathResolverTypeName: 
+  UIScriptCodeEmitterTypeName: 
+  UIScriptFileWriterTypeName: UnityEngine.UI.UXControllerUIScriptFileWriter

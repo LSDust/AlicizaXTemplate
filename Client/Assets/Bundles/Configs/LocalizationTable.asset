@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7468348855826004881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e99433e1eef4a964d98eb541d664ab70, type: 3}
+  m_Name: Russian
+  m_EditorClassIdentifier: 
+  LanguageName: Russian
+  Strings:
+  - EntryId: 74156087
+    SectionId: 80328242
+    Key: Input.action.move
+    Value: move ru
+  - EntryId: 94373125
+    SectionId: 80328242
+    Key: Input.use
+    Value: 
+  - EntryId: 41381430
+    SectionId: 80328242
+    Key: Input.jump
+    Value: 
+  - EntryId: 11809898
+    SectionId: 52383087
+    Key: Tips.error
+    Value: ddddd
+  - EntryId: 91916311
+    SectionId: 77602120
+    Key: UI.touch
+    Value: 
+  - EntryId: 60204351
+    SectionId: 55223838
+    Key: Shortcut.jump
+    Value: Use {0} Jump
+--- !u!114 &-7214673748730851758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e99433e1eef4a964d98eb541d664ab70, type: 3}
+  m_Name: English
+  m_EditorClassIdentifier: 
+  LanguageName: English
+  Strings:
+  - EntryId: 74156087
+    SectionId: 80328242
+    Key: Input.action.move
+    Value: Move
+  - EntryId: 94373125
+    SectionId: 80328242
+    Key: Input.use
+    Value: USE FUCK U
+  - EntryId: 41381430
+    SectionId: 80328242
+    Key: Input.jump
+    Value: 
+  - EntryId: 11809898
+    SectionId: 52383087
+    Key: Tips.error
+    Value: aaaaa
+  - EntryId: 91916311
+    SectionId: 77602120
+    Key: UI.touch
+    Value: 
+  - EntryId: 60204351
+    SectionId: 55223838
+    Key: Shortcut.jump
+    Value: Use {0} Jump
+--- !u!114 &-6251636620881476750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e99433e1eef4a964d98eb541d664ab70, type: 3}
+  m_Name: Japanese
+  m_EditorClassIdentifier: 
+  LanguageName: Japanese
+  Strings:
+  - EntryId: 74156087
+    SectionId: 80328242
+    Key: Input.action.move
+    Value: move jp
+  - EntryId: 94373125
+    SectionId: 80328242
+    Key: Input.use
+    Value: USE FUCK U JP
+  - EntryId: 41381430
+    SectionId: 80328242
+    Key: Input.jump
+    Value: 
+  - EntryId: 11809898
+    SectionId: 52383087
+    Key: Tips.error
+    Value: cccccc
+  - EntryId: 91916311
+    SectionId: 77602120
+    Key: UI.touch
+    Value: 
+  - EntryId: 60204351
+    SectionId: 55223838
+    Key: Shortcut.jump
+    Value: Use {0} Jump
+--- !u!114 &-708586311158497320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e99433e1eef4a964d98eb541d664ab70, type: 3}
+  m_Name: ChineseSimplified
+  m_EditorClassIdentifier: 
+  LanguageName: ChineseSimplified
+  Strings:
+  - EntryId: 74156087
+    SectionId: 80328242
+    Key: Input.action.move
+    Value: "\u79FB\u52A8"
+  - EntryId: 94373125
+    SectionId: 80328242
+    Key: Input.use
+    Value: "\u4F7F\u7528"
+  - EntryId: 41381430
+    SectionId: 80328242
+    Key: Input.jump
+    Value: "\u8DF3\u8DC3"
+  - EntryId: 11809898
+    SectionId: 52383087
+    Key: Tips.error
+    Value: "\u7F51\u7EDC\u9519\u8BEF"
+  - EntryId: 91916311
+    SectionId: 77602120
+    Key: UI.touch
+    Value: "\u70B9\u51FB"
+  - EntryId: 60204351
+    SectionId: 55223838
+    Key: Shortcut.jump
+    Value: "\u4F7F\u7528 {0} \u8DF3\u8DC3"
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b8003079a7f4c54f9326bd1838f057e, type: 3}
+  m_Name: LocalizationTable
+  m_EditorClassIdentifier: 
+  GenerateScriptCodeFolderPath: Assets/Scripts/Hotfix/GameLogic
+  GenerateScriptCodeClassName: LocalizationKey
+  GenerateScriptCodeNamespace: 
+  TableSheet:
+  - Id: 80328242
+    SectionName: Input
+    SectionSheet:
+    - Id: 74156087
+      Key: action.move
+      IsGen: 1
+    - Id: 94373125
+      Key: use
+      IsGen: 1
+    - Id: 41381430
+      Key: jump
+      IsGen: 0
+  - Id: 52383087
+    SectionName: Tips
+    SectionSheet:
+    - Id: 11809898
+      Key: error
+      IsGen: 1
+  - Id: 77602120
+    SectionName: UI
+    SectionSheet:
+    - Id: 91916311
+      Key: touch
+      IsGen: 0
+  - Id: 55223838
+    SectionName: Shortcut
+    SectionSheet:
+    - Id: 60204351
+      Key: jump
+      IsGen: 1
+  Languages:
+  - {fileID: -708586311158497320}
+  - {fileID: -7214673748730851758}
+  - {fileID: -6251636620881476750}
+  - {fileID: -7468348855826004881}
