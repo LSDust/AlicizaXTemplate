@@ -128,6 +128,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1bdadc4210c404daf2f444e85874de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 0
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 3754033378428747194}
+  m_ChildTransitions: []
   itemInteractionFlags: 0
   backgroundImage: {fileID: 3754033378428747194}
   text: {fileID: 5232094481069283953}
@@ -286,7 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e4995cea5647b46995bb92b329207d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _defaultSelectable: {fileID: 3726689482751113210}
+  _defaultSelectable: {fileID: 1669190135039645204}
   _holder: {fileID: 8270483239104722155}
   _bakedSelectables:
   - {fileID: 3726689482751113210}
@@ -577,7 +607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -982,7 +1012,7 @@ RectTransform:
   m_GameObject: {fileID: 1524122663239082903}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1556702787365184499}
@@ -2309,7 +2339,6 @@ GameObject:
   - component: {fileID: 5846308201222473660}
   - component: {fileID: 1875892129405172039}
   - component: {fileID: 5714927647938558385}
-  - component: {fileID: 6312210162531945651}
   m_Layer: 5
   m_Name: ImageViewHolder
   m_TagString: Untagged
@@ -2426,21 +2455,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a895d23cc4694780bbf3d732251a183d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInteractionFlags: 1599
-  backgroundImage: {fileID: 1875892129405172039}
-  iconImage: {fileID: 459151234095208718}
---- !u!114 &6312210162531945651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6617164715097159773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 720e8e459a50e2443847a385966fd104, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 0
     m_WrapAround: 0
@@ -2448,7 +2462,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2470,6 +2484,10 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1875892129405172039}
+  m_ChildTransitions: []
+  itemInteractionFlags: 1599
+  backgroundImage: {fileID: 1875892129405172039}
+  iconImage: {fileID: 459151234095208718}
 --- !u!1 &7543161212447352796
 GameObject:
   m_ObjectHideFlags: 0
