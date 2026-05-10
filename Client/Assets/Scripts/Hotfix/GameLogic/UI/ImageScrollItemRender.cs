@@ -11,7 +11,7 @@ public sealed class ImageScrollItemRender : ItemRender<TestData, ImageViewHolder
 
     protected override void OnBind(TestData data, int index)
     {
-        // baseui.Text.text = data.Name;
+        baseui.Text.text = data.Name;
     }
 
     protected override void OnPointerClick(PointerEventData eventData)

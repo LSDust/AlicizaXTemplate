@@ -28,7 +28,7 @@ public class UILoadUpdate : UITabWindow<ui_UILoadUpdateWindow>
         _list.RegisterItemRender<TextScrollItemRender>();
         baseui.ImgBackGround.color = Color.gray;
         baseui.BtnTest.onClick.AddListener(OnTestClick);
-        SetListAndFocusFirst(CreateTestDataList(200));
+        SetListAndFocusFirst(CreateTestDataList(200000));
 
         baseui.BtnQTest.onClick.AddListener(OnBtnQTestClick);
         baseui.BtnEscTest.onClick.AddListener(OnBtnEscTestClick);
