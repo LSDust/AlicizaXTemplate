@@ -58,7 +58,7 @@ public enum UILayer
 ## UI绑定工具自动生成的Holder有哪些
 生成类禁止手动修改
 
-Holder 挂在 UI 预制体上，负责暴露序列化控件。生成工具会生成类似下面的代码：
+Holder 会自动挂在 UI 预制体上，负责暴露序列化控件。生成工具会生成类似下面的代码：
 
 ```csharp
 using AlicizaX.UI.Runtime;
@@ -186,16 +186,16 @@ namespace Game.UI
 普通控件命名格式：
 
 ```text
-前缀#字段名@
+前缀@字段名
 ```
 
 示例：
 
 ```text
-Btn#Login@
-Img#BackGround@
-Text#Title@
-ScrollView#ItemList@
+Btn@Login
+Img@BackGround
+Text@Title
+ScrollView@ItemList
 ```
 
 会生成类似：
@@ -213,21 +213,21 @@ public Image ImgBackGround => mImgBackGround;
 一个节点需要绑定多个组件时，可以写多个前缀：
 
 ```text
-Btn#Img#Close@
+Btn#Img@Close
 ```
 
 数组控件命名格式：
 
 ```text
-*前缀#字段名@*序号
+*前缀#@字段名*序号
 ```
 
 示例：
 
 ```text
-*Img#Star@*0
-*Img#Star@*1
-*Img#Star@*2
+*Img@Star*0
+*Img@Star*1
+*Img@Star*2
 ```
 
 会按序号排序并生成数组字段：
