@@ -1,0 +1,112 @@
+# UI Extension 扩展包
+
+`com.alicizax.unity.ui.extension` 是 UI 框架之外的一组常用 UI 控件、列表、输入图标和快捷键扩展。它不负责窗口生命周期，窗口打开、关闭、层级和 Holder 生成仍然由框架 UI 模块处理。
+
+源码位置：
+
+- `Client/Packages/com.alicizax.unity.ui.extension/Runtime`
+- `Client/Packages/com.alicizax.unity.ui.extension/Editor`
+- 项目示例：`Client/Assets/Scripts/Hotfix/GameLogic/UI`
+
+## 模块划分
+
+| 文档 | 内容 |
+| --- | --- |
+| [UXComponent](UXComponent.md) | `UXButton`、`UXToggle`、`UXImage`、`UXTextMeshPro`、`UXController`、快捷键和基础交互组件 |
+| [RecyclerView](RecyclerView.md) | 虚拟列表、`ViewHolder`、`ItemRender`、普通列表、循环列表、混合模板列表和分组列表 |
+| [InputGlyph](InputGlyph.md) | Input System 按键图标、设备识别、按键重绑定、输入读取工具 |
+
+## 使用前提
+
+工程需要已经接入基础 UI 模块，并在启动场景中配置好：
+
+- `RootModule`
+- `ObjectPoolComponent`
+- `TimerComponent`
+- `ResourceComponent`
+- `UIComponent`
+
+如果使用输入图标、快捷键或按键重绑定，还需要安装并启用 Unity Input System。包内 asmdef 会在检测到 `com.unity.inputsystem` 后启用相关能力。
+
+## 命名空间
+
+常用类型分布如下：
+
+| 类型 | 命名空间 |
+| --- | --- |
+| `UXButton`、`UXToggle`、`UXImage`、`UXTextMeshPro`、`UXController` | `UnityEngine.UI` |
+| `RecyclerView`、`ViewHolder`、`UGList`、`ItemRender` | `AlicizaX.UI` |
+| `InputGlyph`、`GlyphService`、`InputBindingManager`、`InputDeviceWatcher` | 全局命名空间 |
+
+示例：
+
+```csharp
+using AlicizaX.UI;
+using UnityEngine.UI;
+
+public sealed class Demo
+{
+    private UXButton _button;
+    private RecyclerView _list;
+}
+```
+
+## 编辑器入口
+
+扩展包提供了几个常用右键创建入口：
+
+```text
+GameObject/UI/UXButton
+GameObject/UI/UXToggle
+GameObject/UI/UXImage
+GameObject/UI/UXTextMeshPro
+GameObject/UI/UXInput Field
+GameObject/UI/UXScrollView
+GameObject/UI/UXTemplateWindow
+```
+
+输入图标数据库编辑窗口：
+
+```text
+AlicizaX/Extension/Input/InputGlyph
+```
+
+`UXScrollView` 会从包内模板创建一个已经带有 `RecyclerView` 结构的滚动列表，适合再按项目需要替换列表项模板。
+
+## 与 UI 模块的关系
+
+`Books/UI.md` 说明的是窗口框架和 Holder 生成；本目录说明的是具体控件和列表怎么使用。推荐接入顺序：
+
+1. 先按 [UI 模块](../UI.md) 配好窗口、Holder 生成和 `baseui` 引用。
+2. 在 Prefab 中使用 `UXButton`、`RecyclerView` 等扩展控件。
+3. 在窗口逻辑里通过自动生成的 Holder 字段访问扩展控件。
+
+示例：
+
+```csharp
+using AlicizaX.UI;
+using AlicizaX.UI.Runtime;
+using Game.UI;
+using UnityEngine.UI;
+
+[Window(UILayer.UI)]
+public sealed class BagWindow : UIWindow<ui_BagWindow>
+{
+    private UGList<BagItemData> _items;
+
+    protected override void OnInitialize()
+    {
+        baseui.BtnClose.onClick.AddListener(CloseSelf);
+
+        _items = UGListCreateHelper.Create<BagItemData>(baseui.ScrollViewItems);
+        _items.RegisterItemRender<BagItemRender>();
+    }
+}
+```
+
+## 注意事项
+
+1. `UXButton`、`UXToggle` 等类型在 `UnityEngine.UI` 命名空间下，和 Unity UGUI 控件同一套使用方式。
+2. `RecyclerView` 的 `SetAdapter`、`Refresh`、`RequestLayout` 是内部方法，业务层优先通过 `UGList`、`UGMixedList` 等包装类操作。
+3. `InputGlyph` 运行时不会自动 `Resources.Load` 图标库，必须在项目启动时调用 `GlyphService.SetDatabase(...)` 注入 `InputGlyphDatabase`。
+4. `InputBindingManager` 继承框架服务组件，需要挂在启动场景或常驻节点上，并配置 `InputActionAsset`。
