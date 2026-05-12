@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 using System.Reflection;
 using AlicizaX;
+using AlicizaX.Localization;
+using GameLogic.Player;
+using GameLogic.UI;
 
 namespace GameLogic
 {
@@ -13,7 +16,14 @@ namespace GameLogic
         {
             Log.Info("HotFix Logic Entry!");
             _hotfixAssembly = (List<Assembly>)objects[0];
-            GameApp.UI.ShowUISync<UILoadUpdate>();
+            GameLocaizationTable locaizationTable = GameApp.Resource.LoadAsset<GameLocaizationTable>("LocalizationTable");
+            GameApp.Localization.IncreAddLocalizationConfig(locaizationTable);
+            if (!AppServices.App.TryGet<IFakePlayerDataService>(out _))
+            {
+                AppServices.App.Register<IFakePlayerDataService>(new FakePlayerDataService());
+            }
+
+            GameApp.UI.ShowUI<UIHomeWindow>();
         }
     }
 }

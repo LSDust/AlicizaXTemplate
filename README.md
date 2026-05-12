@@ -1,4 +1,3 @@
-# AlicizaX
 
 <div align="center">
 
